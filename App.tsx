@@ -1,18 +1,8 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  useColorScheme,
-  View,
-} from 'react-native';
-import {
-  Colors,
-  Header,
-} from 'react-native/Libraries/NewAppScreen';
+import { SafeAreaView, ScrollView, StatusBar } from 'react-native';
+import { Header } from 'react-native/Libraries/NewAppScreen';
 
 const App = () => {
-
   return (
     <SafeAreaView>
       <StatusBar />
