@@ -1,16 +1,11 @@
-import React from 'react';
-import { SafeAreaView, ScrollView, StatusBar } from 'react-native';
-import { Header } from 'react-native/Libraries/NewAppScreen';
 
-const App = () => {
+import React from 'react'
+import { ScreensLayout } from './src/components/ScreensLayout'
+
+function App(): JSX.Element {
   return (
-    <SafeAreaView>
-      <StatusBar />
-      <ScrollView>
-        <Header />
-      </ScrollView>
-    </SafeAreaView>
-  );
-};
+    <ScreensLayout />
+  )
+}
 
-export default App;
+export default App
