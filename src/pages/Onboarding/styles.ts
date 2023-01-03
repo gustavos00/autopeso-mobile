@@ -6,8 +6,7 @@ interface x {
 
 export const Container = styled.ScrollView`
     flex: 1;
-    padding-right: 10%;
-    padding-left: 10%;
+
     background-color: ${props => props.theme.colors.black.main};
 `;
 
@@ -47,4 +46,18 @@ export const Dot = styled.View<x>`
     background-color: ${props => props.isActive ? props.theme.colors.gray.main : props.theme.colors.gray.secundary};
 `;
 
+export const BoxContainer = styled.ScrollView`
+    width: 100%;
+    margin-bottom: ${props => props.theme.metrics.xlg}px;
+
+    background-color: blue;
+`;
+
+export const Box = styled.View`
+    width: 250px;
+    height: 100%;
+    margin: 0 30px;
+
+    background-color: red;
+`;
 
