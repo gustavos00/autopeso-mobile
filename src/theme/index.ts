@@ -16,6 +16,7 @@ interface MetricsStructure {
     md: number,
     lg: number,
     xlg: number,
+    xxlg: number,
 }
 
 export interface ThemeInterface {
@@ -45,5 +46,6 @@ export const theme: ThemeInterface = {
         md: 16,
         lg: 24,
         xlg: 32,
+        xxlg: 44,
     }
 } 
