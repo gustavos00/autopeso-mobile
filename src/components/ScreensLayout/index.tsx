@@ -1,16 +1,20 @@
 import React from 'react'
-import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { ThemeProvider } from 'styled-components';
 
-import { Router } from '../../routes/Router'
+import { ThemeProvider } from 'styled-components/native';
+
+import { Router } from '../../pages/Router'
 import { theme } from '../../theme'
+
+import * as S from './styles'
 
 export function ScreensLayout(): JSX.Element {
   return (
     <ThemeProvider theme={theme}>
-      <SafeAreaProvider>
-        <Router />
-      </SafeAreaProvider>
+      <S.SafeAreaContainer>
+        <S.Wrapper >
+          <Router />
+        </S.Wrapper>
+      </S.SafeAreaContainer>
     </ThemeProvider>
   );
 }
