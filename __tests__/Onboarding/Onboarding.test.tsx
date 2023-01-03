@@ -2,7 +2,7 @@ import 'react-native';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
-import { Onboarding } from '../../src/routes/Onboarding';
+import { Onboarding } from '../../src/pages/Onboarding';
 import { theme } from '../../src/theme/index'
 
 jest.mock('@react-navigation/native', () => {
